@@ -8,6 +8,9 @@ dubbo:
     base-packages: com.funtl.apache.dubbo.provider.service
   protocol:
     name: dubbo
-    port: -1
+    port: 20881
+    serialization: kryo
   registry:
     address: nacos://192.168.43.12:8848
+  provider:
+    loadbalance: roundrobin
